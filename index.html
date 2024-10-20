@@ -3,45 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .welcome-container {
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
-            color: #333;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="welcome-container">
-        <h1>Welcome to My Website!</h1>
-        <p>We are glad to see you join us! </p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I’m a photographer passionate about capturing moments that matter. I specialize in portraits, landscapes, and event photography.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div id="albumContainer"></div>
+        <button onclick="addAlbum()">Add Album</button>
+        <button onclick="addPhoto()">Add Photo</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact & Social Media</h1>
+        <p>Email: photographer@example.com</p>
+        <p>Instagram: <a href="https://www.instagram.com">instagram.com/photographer</a></p>
+        <p>Twitter: <a href="https://www.twitter.com">twitter.com/photographer</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
